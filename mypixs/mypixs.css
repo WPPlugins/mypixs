@@ -1,0 +1,137 @@
+ /* MYPIXS CSS v0.2.1 */
+ 
+ body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+ }
+ 
+ .photoset {
+  width: 102px;
+  height: 102px;
+  overflow: hidden;
+  border: 1px solid #000000; /* border color of your photosets */
+  margin: 0px;
+  padding: 5px;
+  position: relative;
+  background-color: #e4e8ea; /* background color of your photosets */
+  z-index: 100;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+ }
+ 
+ .photoset table {
+  border-collapse: collapse; 
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: auto !important;
+ }
+ 
+ .photoset table td {
+  width: 92px !important;
+  height: 92px !important;
+  margin: 0px;
+  padding: 2px;
+ }
+ 
+ .photoset table td img {
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 92px !important;
+  max-height: 92px !important;
+  margin: 3px;
+  padding: 0px;
+  display: block;
+  border: 1px solid #000000; /* border color of your thumbnails */
+ }    
+ 
+ .photoset .setloading {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF; /* background color of the photoset loader */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 102;
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .photoset .closebutton, #imageholder .closebutton {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  top: -12px;
+  right: -13px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+ }
+ 
+ .photoset .closebutton {
+  right: -14px;
+  top: -11px;
+ }
+ 
+ .photoset .closebutton img, #imageholder .closebutton img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+ }
+ 
+ #imagefog {
+  background-color: #000000; /* background color of the fog behind an opened photo */
+  opacity: .85; /* opacity of the fog */
+  filter: alpha(opacity=85); /* same as above, but in IE */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999998;
+ }
+ 
+ #imageholder {
+  background-color: #FFFFFF; /* background color of an opened photo */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999999999;
+  padding: 10px;
+  border: 0px; 
+  background-repeat: no-repeat;
+  background-position: center center;
+ }
+ 
+ #imageholder img {
+ }
+ 
+ #imageholder .prevbutton, #imageholder .nextbutton {
+  position: absolute;
+  width: 48px;
+  height: 40px;
+  z-index: 9999999999;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+ }
+ 
+ #imageholder .prevbutton {
+  left: -100px;
+ }
+ 
+ #imageholder .nextbutton {
+  right: -100px;
+ }

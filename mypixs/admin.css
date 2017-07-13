@@ -1,0 +1,48 @@
+ #holderbody {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: verdana, arial;
+  font-size: 11px;
+  color: #333333;
+ }
+ 
+ #holderbody h1 {
+  font-size: 26px;
+  border-bottom: 1px solid #333333;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+ } 
+ 
+ #holdercontent {
+  float: left;
+  margin: 10px;
+  margin-top: 5px;
+  width: 60%;
+  height: auto;
+ }
+ 
+ .mypixs_urls_textarea {
+  width: 85%;
+  height: 320px;
+ }
+ 
+ .mypixs_html_submit {
+  vertical-align: middle;
+  text-align: right;
+  width: 85%;
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .mypixs_html_submit input {
+  margin: 0px;
+  margin-right: -9px;
+  margin-top: 4px;
+ }

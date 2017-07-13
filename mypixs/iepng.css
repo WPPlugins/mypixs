@@ -1,0 +1,25 @@
+.photoset .closebutton, #imageholder .closebutton {
+ /* properties have been moved to the mypixs.js file to improve configuration */
+}
+ 
+.photoset .closebutton img, #imageholder .closebutton img {
+ filter: alpha(opacity=0);
+}     
+
+#imagefog, #imageholder {
+ position: absolute !important;
+}
+
+#imagefog {
+ top: expression(( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) + 'px');
+ left: expression(( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) + 'px'); 
+}
+
+#imageholder {
+ top: expression(( ignoreMe = document.documentElement.scrollTop ? (document.documentElement.scrollTop + (document.documentElement.clientHeight / 2)) : (document.body.scrollTop + (document.body.clientHeight / 2))) + 'px');
+ left: expression(( ignoreMe = document.documentElement.scrollLeft ? (document.documentElement.scrollLeft + (document.documentElement.clientWidth / 2)) : (document.body.scrollLeft + (document.body.clientWidth / 2))) + 'px'); 
+}
+
+.nextbutton, .prevbutton {
+ background-image: none !important;
+}
